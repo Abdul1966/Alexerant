@@ -1,0 +1,37 @@
+
+body{
+    margin: 0;
+}
+.site{
+    width:80%;
+    height: auto;
+    margin: 0 10%;
+}
+
+.heading-container, .menu-container{
+    width:100%;
+    height: auto;
+    margin:0 ;
+}
+.heading{
+    text-align: center;
+    color:blue;
+    margin:0;
+    padding:10px 0;
+}
+
+.menu-container .menu{
+    width:100%;
+    height: auto;
+    margin:0;
+    padding:10px 0;
+    list-style: none;
+}
+
+.menu-container .menu li{
+
+    display: inline;
+    padding:10px 20px;
+    font-size: 18px;
+}
+
