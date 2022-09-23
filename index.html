@@ -1,30 +1,228 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mobilise Tests Tasks</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="K. Syed Abdul Rehman">
-        <meta name="description" content="Test tasks for Mobilise Company">
-        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Axelerant Assessment Project</title>
+        <meta name = "description" content = "Attempting the Assessment test by Axelerant Company">
+        <meta name = "author" content = "K. Syed Abdul Rehman">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+
+        <script src = "assets/js/main.js"></script>
+        <link rel="stylesheet" href = "assets/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+
     </head>
-    <body>
-        <div class="site">
-            <div class="heading-container">
-            <h1 class="heading">Mobilise Tasks</h1>
+    <body onresize = "displayMobileMenu()">
+        <header class="header">
+            <div class="logo">
+                <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.9043 8.27199C29.3839 4.256 22.0465 3.34188 15.9513 4.55307C9.13206 -2.68881 1.49044 0.64217 0 1.59975C0 1.59975 5.24415 6.50616 4.39237 10.8034C-1.81622 17.7719 1.13523 25.5305 4.39237 29.1941C5.24415 33.4914 0 38.3978 0 38.3978C1.47608 39.3585 9.0969 42.6793 15.9513 35.4745C22.0329 36.6778 29.3703 35.7716 34.9043 31.7485C43.4623 25.7328 43.4903 14.3185 34.9043 8.2712V8.27199ZM21.1101 31.7098C18.9759 31.7165 16.8501 31.4145 14.7874 30.8114L13.3687 32.3197C12.5807 33.1611 11.6983 33.8884 10.7431 34.4837C9.58404 35.1263 8.32494 35.5211 7.03239 35.6475C7.10415 35.5069 7.1673 35.3663 7.23116 35.2335C8.65056 32.3366 9.03327 29.7375 8.37931 27.4362C6.04499 25.4128 4.64784 22.8269 4.64784 19.9992C4.64784 13.5205 12.0204 8.27199 21.1101 8.27199C30.1998 8.27199 37.5723 13.5205 37.5723 19.9992C37.5723 26.4778 30.1998 31.7098 21.1101 31.7098ZM13.2123 22.7882C12.5606 22.7983 11.9318 22.5236 11.4637 22.0242C10.9956 21.5248 10.7264 20.8415 10.7151 20.124C10.6648 16.5378 15.5825 16.4596 15.632 20.0379V20.0782C15.635 20.4312 15.5748 20.7814 15.4548 21.1088C15.3348 21.4362 15.1574 21.7344 14.9327 21.9862C14.7079 22.238 14.4403 22.4386 14.1451 22.5765C13.8499 22.7144 13.5329 22.7868 13.2123 22.7897V22.7882ZM18.506 20.124C18.4493 16.5378 23.3669 16.4517 23.4236 20.03V20.0782C23.4516 23.6399 18.5626 23.6786 18.506 20.124ZM28.7948 22.7882C28.143 22.7983 27.5141 22.5236 27.0459 22.0243C26.5777 21.5249 26.3084 20.8416 26.2968 20.124C26.2473 16.5378 31.165 16.4596 31.2145 20.0379V20.0782C31.2186 20.4315 31.1591 20.7823 31.0394 21.1102C30.9198 21.4381 30.7424 21.7367 30.5175 21.9888C30.2926 22.2408 30.0245 22.4414 29.7289 22.5788C29.4332 22.7163 29.1157 22.788 28.7948 22.7897V22.7882Z" fill="#FC732F"/>
+                </svg>
+                <div class="logo-name">
+                    <span class="name-white">LOGO</span>
+                    <span class = "name-orange">IPSUM</span>
+                </div>
             </div>
             <div class="menu-container">
                 <ul class="menu">
-                    <li><a href="landing-page.html">Landing Page</a></li>
-                    <li><a href="calendar.html">Date Picker</a></li>
-                    <li><a href="google-banner.html">Google Banner</a></li>
+                    <li class="menu-item">
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Account</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Help</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Logout</a>
+                    </li>
                 </ul>
             </div>
+        </header>
+        <header class="mobile-header">
+            <div class="mobile-header-container">
+                <div id="iconContainer" class="iconContainer" onclick ="myFunction(this)">
+                    <div id="topBar" class ="topBar"></div>
+                    <div id="middleBar" class ="middleBar"></div>
+                    <div id="bottomBar" class ="bottomBar"></div>
+                </div>
+                <div class="logo">
+                    <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.9043 8.27199C29.3839 4.256 22.0465 3.34188 15.9513 4.55307C9.13206 -2.68881 1.49044 0.64217 0 1.59975C0 1.59975 5.24415 6.50616 4.39237 10.8034C-1.81622 17.7719 1.13523 25.5305 4.39237 29.1941C5.24415 33.4914 0 38.3978 0 38.3978C1.47608 39.3585 9.0969 42.6793 15.9513 35.4745C22.0329 36.6778 29.3703 35.7716 34.9043 31.7485C43.4623 25.7328 43.4903 14.3185 34.9043 8.2712V8.27199ZM21.1101 31.7098C18.9759 31.7165 16.8501 31.4145 14.7874 30.8114L13.3687 32.3197C12.5807 33.1611 11.6983 33.8884 10.7431 34.4837C9.58404 35.1263 8.32494 35.5211 7.03239 35.6475C7.10415 35.5069 7.1673 35.3663 7.23116 35.2335C8.65056 32.3366 9.03327 29.7375 8.37931 27.4362C6.04499 25.4128 4.64784 22.8269 4.64784 19.9992C4.64784 13.5205 12.0204 8.27199 21.1101 8.27199C30.1998 8.27199 37.5723 13.5205 37.5723 19.9992C37.5723 26.4778 30.1998 31.7098 21.1101 31.7098ZM13.2123 22.7882C12.5606 22.7983 11.9318 22.5236 11.4637 22.0242C10.9956 21.5248 10.7264 20.8415 10.7151 20.124C10.6648 16.5378 15.5825 16.4596 15.632 20.0379V20.0782C15.635 20.4312 15.5748 20.7814 15.4548 21.1088C15.3348 21.4362 15.1574 21.7344 14.9327 21.9862C14.7079 22.238 14.4403 22.4386 14.1451 22.5765C13.8499 22.7144 13.5329 22.7868 13.2123 22.7897V22.7882ZM18.506 20.124C18.4493 16.5378 23.3669 16.4517 23.4236 20.03V20.0782C23.4516 23.6399 18.5626 23.6786 18.506 20.124ZM28.7948 22.7882C28.143 22.7983 27.5141 22.5236 27.0459 22.0243C26.5777 21.5249 26.3084 20.8416 26.2968 20.124C26.2473 16.5378 31.165 16.4596 31.2145 20.0379V20.0782C31.2186 20.4315 31.1591 20.7823 31.0394 21.1102C30.9198 21.4381 30.7424 21.7367 30.5175 21.9888C30.2926 22.2408 30.0245 22.4414 29.7289 22.5788C29.4332 22.7163 29.1157 22.788 28.7948 22.7897V22.7882Z" fill="#FC732F"/>
+                    </svg>
+                    <div class="logo-name">
+                        <span class="name-white">LOGO</span>
+                        <span class = "name-orange">IPSUM</span>
+                    </div>
+                </div>
+                <div class = "logout">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.6678 10.8588L15.6674 19.5865C14.9531 20.3658 13.715 19.8203 13.715 18.7033V13.7161H7.23845C6.60509 13.7161 6.09554 13.1602 6.09554 12.4693V7.482C6.09554 6.79105 6.60509 6.23518 7.23845 6.23518H13.715V1.24792C13.715 0.136177 14.9484 -0.4145 15.6674 0.364759L23.6678 9.09247C24.1107 9.5808 24.1107 10.3705 23.6678 10.8588ZM9.14331 19.3267V17.2487C9.14331 16.9058 8.88616 16.6253 8.57185 16.6253H4.57166C3.72876 16.6253 3.04777 15.8824 3.04777 14.9629V4.98837C3.04777 4.06884 3.72876 3.32595 4.57166 3.32595H8.57185C8.88616 3.32595 9.14331 3.04541 9.14331 2.70254V0.624513C9.14331 0.281638 8.88616 0.00110492 8.57185 0.00110492H4.57166C2.04772 0.00110492 0 2.23498 0 4.98837V14.9629C0 17.7163 2.04772 19.9501 4.57166 19.9501H8.57185C8.88616 19.9501 9.14331 19.6696 9.14331 19.3267Z" fill="white"/>
+                    </svg>                        
+                </div>
+            </div>
+        </header>
+        <div id = "mobile-menu-container" class = "mobile-menu-container">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="">Dashboard</a>
+                </li>
+                <li class="menu-item">
+                    <a href="">Account</a>
+                </li>
+                <li class="menu-item">
+                    <a href="">Help</a>
+                </li>
+                <li class="menu-item">
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <div class ="main">
+            <div id = "modal-container" class="modal-container" onclick="closeModal()">
+                <div class="row">
+                    <div class="col1">
+                        <div class="label">
+                            Name :
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div id="modal-name">
 
-            <p>I have completed 3 tasks and I am working on the Email template.
-                Please review these tasks and give me your feed back.
-            </p>
-            <p>You can view each task by clicking the relevant items in the menu above</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <div class="label">
+                            Mobile :
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div id="modal-tel">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <div class="label">
+                            Email :
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div id="modal-email">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <form class="account-form" method = "post" action="">
+                <div class = "account-row">
+                    <div class = "col1">
+                        <div class="main-image">
+                            <img src="assets/images/pic-1.png"/>
+                        </div>
+                    </div>
+                    <div class = "col2">
+                        <div class = "row">
+                            <div class = "account-heading">
+                                MY ACCOUNT
+                            </div>
+                        </div>
+                        <div class ="row">
+                            <input id="name" type ="text" name ="name" placeholder="Name" onchange="setNameBackgroundColor()"/>
+                        </div> 
+                        <div class="row">
+                            <div class="col1">
+                                <input id="tel" type ="tel" name = "tel" placeholder="Mobile" onchange="setTelBackgroundColor()"/>
+                            </div>
+                            <div class = "col2">
+                                <input id="email" type = "email" name = "email" placeholder="Email" onchange="setEmailBackgroundColor()"/>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="horizontal-line">
+                    <hr>
+                </div>
+                <div class="select-configuration">
+                    Select Configuration
+                </div>
+                <div class="options-row">
+                    <div class="col1">
+                        <input class="option-radio" type="radio" name ="manual-configuration" checked="checked"/>
+                    </div>
+                    <div id="manual-configuration" class="col2">
+                        <div class="option-heading">
+                            Manual Configuration
+                        </div>
+                        <div class="option-text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                        </div>
+                    </div>
+                </div>
+                <div class="options-row">
+                    <div class="col1">
+                        <input class="option-radio" type="radio" name ="manual-configuration" />
+                    </div>
+                    <div class="col2">
+                        <div class="option-heading">
+                            Services Access
+                        </div>
+                        <div class="option-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed massa leo. Lorem 
+                            ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu varius felis. Integer 
+                            posuere urna ut mi porta, vel fringilla dolor convallis. Sed laoreet sodales sapien vel 
+                            vestibulum. Nulla dictum eros ut efficitur porttitor. Mauris dignissim, lectus sit amet 
+                            euismod pretium, ex purus condimentum erat, eu feugiat nisi ipsum ac eros. 
+                        </div>
+                    </div>
+                </div>
+                <div class="options-row">
+                    <div class="col1">
+                        <input class="option-radio" type="radio" name ="manual-configuration" />
+                    </div>
+                    <div class="col2">
+                        <div class="option-heading">
+                            Semi-auto Configuration
+                        </div>
+                        <div class="option-text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  
+                        </div>
+                    </div>
+                </div>
+                <div class="options-row">
+                    <div class="col1">
+                        <input class="option-radio" type="radio" name ="manual-configuration" />
+                    </div>
+                    <div class="col2">
+                        <div class="option-heading">
+                            Automatic Configuration
+                        </div>
+                        <div class="option-text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-row">
+                    <input type="button" id="update-button" class="update-button" value="Update Configuration" onclick="showModal()"/>
+                    <input type="button" class="cancel-button" value="x Cancel"/>
+                </div>
+            </form>
         </div>
     </body>
+    <script>addEventListenerRadioClick()</script>
+
 </html>
+
+
+    
